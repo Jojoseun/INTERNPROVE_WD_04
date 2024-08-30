@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background:#000430;
+    --secondarybackground:#171c48;
+    --text:#fff;
+    --purple:#828dff;
+    --teal:#24feee;
+}
+body{
+    background-color: var(--background);
+    color: var(--text);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin: 120px auto 0 auto;
+    max-width: 500px;
+
+}
+.container ul {
+    list-style: none;
+
+}
+.container ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--purple);
+    margin-top: 5px;
+    border-radius: 10px;
+    padding: 5px 15px;
+
+}
+.container ul li .delete-btn{
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    border: 2px solid var(--secondarybackground);
+}
+.details{
+    width: 100%;
+}
+.start-container{
+    padding: 15px;
+    border: 3px solid var(--purple);
+    border-radius: 20px;
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: space-between;
+}
+#progressBar{
+    width: 100%;
+    height: 10px;
+    background-color: var(--secondarybackground);
+    border-radius: 6px;
+    margin-top: 20px;
+
+}
+#progress{
+    width: 50%;
+    height: 10px;
+    background-color: var(--teal);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+#numbers{
+    width: 100px;
+    height: 100px;
+    background-color: var(--purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+}
+form{
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+}
+input{
+    flex: 3;
+    padding: 20px;
+    background-color: var(--secondarybackground);
+    border: 2px solid var(--purple);
+    outline: none;
+}
+button{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--purple);
+    
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    border-radius: 50%;
+}
